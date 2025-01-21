@@ -1,0 +1,28 @@
+{
+    "name": "Python_CICD_Job",
+    "new_cluster": {
+      "spark_version": "7.3.x-scala2.12",
+      "node_type_id": "i3.xlarge",
+      "num_workers": 2
+    },
+    "tasks": [
+      {
+        "task_key": "notebook_task_1",
+        "notebook_task": {
+          "notebook_path": "/Workspace/Shared/dev_python/src/calculator.py"
+        }
+      },
+      {
+        "task_key": "notebook_task_2",
+        "notebook_task": {
+          "notebook_path": "/Workspace/Shared/dev_python/test/test_calculator.py"
+        }
+      }
+    ],
+    "email_notifications": {
+      "on_start": [],
+      "on_success": [],
+      "on_failure": ["bhoomika.soni.0205@gmail.com"]
+    }
+  }
+  
