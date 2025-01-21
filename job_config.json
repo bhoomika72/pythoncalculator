@@ -1,3 +1,25 @@
+// {
+//     "name": "Python_CICD_Job",
+//     "tasks": [
+//       {
+//         "task_key": "notebook_task_1",
+//         "notebook_task": {
+//           "notebook_path": "/Workspace/Shared/dev_python/test/test_calculator.py"
+//         },
+//         "new_cluster": {
+//           "spark_version": "15.4.x-scala2.12",
+//           "node_type_id": "Standard_DS3_v2",
+//           "num_workers": 0
+//         }
+//       }
+//     ],
+//     "email_notifications": {
+//       "on_start": [],
+//       "on_success": [],
+//       "on_failure": ["bhoomika.soni.0205@gmail.com"]
+//     }
+// }
+
 {
     "name": "Python_CICD_Job",
     "tasks": [
@@ -9,7 +31,11 @@
         "new_cluster": {
           "spark_version": "15.4.x-scala2.12",
           "node_type_id": "Standard_DS3_v2",
-          "num_workers": 0
+          "num_workers": 0,
+          "single_user": true,
+          "custom_tags": {
+            "ClusterType": "SingleNode"
+          }
         }
       }
     ],
@@ -19,4 +45,5 @@
       "on_failure": ["bhoomika.soni.0205@gmail.com"]
     }
   }
+  
   
