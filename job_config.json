@@ -4,7 +4,7 @@
       {
         "task_key": "notebook_task_1",
         "notebook_task": {
-          "notebook_path": "/Workspace/Shared/dev_python/src/calculator.py"
+          "notebook_path": "/Workspace/Shared/dev_python/test/test_calculator.py"
         },
         "new_cluster": {
           "spark_version": "15.4.x-scala2.12",
