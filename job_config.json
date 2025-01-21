@@ -1,21 +1,15 @@
 {
     "name": "Python_CICD_Job",
-    "new_cluster": {
-      "spark_version": "15.4.x-scala2.12",
-      "node_type_id": "Standard_DS3_v2",
-      "num_workers": 0
-    },
     "tasks": [
       {
         "task_key": "notebook_task_1",
         "notebook_task": {
           "notebook_path": "/Workspace/Shared/dev_python/src/calculator.py"
-        }
-      },
-      {
-        "task_key": "notebook_task_2",
-        "notebook_task": {
-          "notebook_path": "/Workspace/Shared/dev_python/test/test_calculator.py"
+        },
+        "new_cluster": {
+          "spark_version": "15.4.x-scala2.12",
+          "node_type_id": "Standard_DS3_v2",
+          "num_workers": 0
         }
       }
     ],
