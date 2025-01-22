@@ -1,5 +1,5 @@
 # COMMAND ----------
-with open("/dbfs/FileStore/pythoncalculator/src/calculator.py") as f:
+with open("/dbfs/FileStore/pythoncalculator/calculator.py") as f:
     print(f.read())
 
 # COMMAND ----------
