@@ -2,7 +2,7 @@
 import pytest
 import sys
 
-sys.path.append('/FileStore/pythoncalculator/src')
+sys.path.append('/FileStore/python_files/src')
 
 # Import dynamically
 calculator = __import__('calculator')
@@ -27,4 +27,4 @@ def test_divide():
 
 # COMMAND ----------
 
-!pytest /dbfs/FileStore/pythoncalculator/test/test_calculator.py
+!pytest /dbfs/FileStore/python_files/test/test_calculator.py
