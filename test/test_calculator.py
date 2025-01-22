@@ -1,8 +1,12 @@
 # COMMAND ----------
+with open("/dbfs/FileStore/pythoncalculator/src/calculator.py") as f:
+    print(f.read())
+
+# COMMAND ----------
 import pytest
 import sys
 
-sys.path.append('/FileStore/pythoncalculator/src')
+sys.path.append('/FileStore/pythoncalculator')
 
 # Import dynamically
 calculator = __import__('calculator')
