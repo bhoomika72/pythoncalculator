@@ -4,24 +4,25 @@ import sys
 
 sys.path.append('/FileStore/pythoncalculator/src')
 
-from calculator import *
+# Import dynamically
+calculator = __import__('calculator')
 
 def test_add():
-    assert add(3, 5) == 8
-    assert add(-1, 1) == 0
+    assert calculator.add(3, 5) == 8
+    assert calculator.add(-1, 1) == 0
 
 def test_subtract():
-    assert subtract(10, 5) == 5
-    assert subtract(0, 5) == -5
+    assert calculator.subtract(10, 5) == 5
+    assert calculator.subtract(0, 5) == -5
 
 def test_multiply():
-    assert multiply(4, 3) == 12
-    assert multiply(-2, 3) == -6
+    assert calculator.multiply(4, 3) == 12
+    assert calculator.multiply(-2, 3) == -6
 
 def test_divide():
-    assert divide(10, 2) == 5
+    assert calculator.divide(10, 2) == 5
     with pytest.raises(ValueError):
-        divide(10, 0)
+        calculator.divide(10, 0)
 
 
 # COMMAND ----------
