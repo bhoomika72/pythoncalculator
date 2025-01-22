@@ -1,10 +1,10 @@
-# COMMAND ----------
 import pytest
 import sys
+import os
 
-sys.path.append('/FileStore/calculator.py')
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
-from calculator import *
+from src.calculator import *
 
 def test_add():
     assert add(3, 5) == 8
