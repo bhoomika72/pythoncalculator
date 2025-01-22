@@ -1,3 +1,4 @@
+# COMMAND ----------
 import pytest
 import sys
 
@@ -23,6 +24,6 @@ def test_divide():
         divide(10, 0)
 
 
-#command -----------
+# COMMAND ----------
 
 !pytest /dbfs/FileStore/pythoncalculator/test_calculator.py
