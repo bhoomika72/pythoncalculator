@@ -1,4 +1,7 @@
 import pytest
+import sys
+
+sys.path.append('/FileStore/pythoncalculator/src')
 
 from calculator import *
 
@@ -18,3 +21,8 @@ def test_divide():
     assert divide(10, 2) == 5
     with pytest.raises(ValueError):
         divide(10, 0)
+
+
+#command -----------
+
+!pytest /dbfs/FileStore/pythoncalculator/test_calculator.py
