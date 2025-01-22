@@ -1,6 +1,6 @@
 import pytest
 
-from src.calculator import *
+from calculator import *
 
 def test_add():
     assert add(3, 5) == 8
