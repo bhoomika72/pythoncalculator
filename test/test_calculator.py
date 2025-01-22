@@ -26,4 +26,4 @@ def test_divide():
 
 # COMMAND ----------
 
-!pytest /dbfs/FileStore/pythoncalculator/test_calculator.py
+!pytest /dbfs/FileStore/pythoncalculator/test/test_calculator.py
