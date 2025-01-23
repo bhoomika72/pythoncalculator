@@ -8,7 +8,7 @@ def test_smoke_add():
     result = add(1, 1)
     assert result == 2
 
-def test_smoke_subtract()
+def test_smoke_subtract():
     result = subtract(2, 1)
     assert result == 1
 
